@@ -1,0 +1,7 @@
+# MyProfile
+A personal website to showcase my profile and skills. This website is hosted on Amazon S3, a cloud storage service. To handle the contact form submissions on my website, I've set up a process that involves several AWS (Amazon Web Services) components.
+When someone submits a contact form on my website, the data is sent to Amazon API Gateway, which acts as a communication gateway. From there, the information is forwarded to an AWS Lambda function, a small piece of code that can execute tasks. This Lambda function processes the contact form data.
+Next, I've integrated Amazon Simple Email Service (SES) to manage my email. SES is a service that handles sending and receiving emails. My email address is registered with SES, and it's also subscribed to Amazon Simple Notification Service (SNS), which is a messaging service.
+SNS receives messages from the Lambda function and forwards them to my email through SES. This allows me to receive and manage the messages from the contact form. Additionally, I've set up Amazon DynamoDB to keep track of the submitted messages, which provides a record of all the inquiries I receive.
+In summary, I've built a system that allows people to contact me through my website, and I can manage these messages efficiently through AWS services like API Gateway, Lambda, SES, SNS, and DynamoDB. This not only helps me keep organized but also ensures a smooth communication process with anyone who wants to get in touch with me.
+

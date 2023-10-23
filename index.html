@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c7ac39b9eb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/tnsaeslogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Java Software Engineer</p>
+            <h1>Hi, this is <span>Tinsaeberhane</span><br>Backend Developer, Software Engineer, Full-Stack Developer</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Talented and self-motivated Java Developer with over 8+ years of experience with all phases of the SDLC 
+                    in delivering high-quality, robust, and maintainable applications in alignment with business requirements. 
+                    Proficient in a wide range of technologies, notably Java, Spring Framework, Restful, JavaScript, 
+                    both relational and non-relational databases with MySQL, PostgreSQL, and Mongo DB, with a passion for 
+                    learning and continuous improvement. Committed to adding value through creative problem solving, collaboration, 
+                    and decision-making skills with a results-driven approach.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul class="vertical-skills">
+                        <li><span>Java</span><span id="percent">85%</span></li>
+                        <li><span>Spring Framework</span><span id="percent">85%</span></li>
+                        <li><span>MySQL</span><span>80%</span id="percent"></li>
+                        <li><span>PostgreSQL</span><span id="percent">80%</span></li>
+                        <li><span>Kafka</span><span id="percent">80%</span></li>
+                        <li><span>JavaScript</span><span id="percent">80%</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Software Engineer at Kabbee++, San Jose, CA, USA</li>
+                        <li><span>2020 - 2022</span><br>Software Engineer at Lysteknikk Elektroentreprenør, Oslo, Norway</li>
+                        <li><span>2019 - 2020</span><br>Sr. Software Engineer at Brothers Computer Center, Asmara, Eritrea</li>
+                        <li><span>2017 - 2019</span><br>Software Engineer at Brothers Computer Center, Asmara, Eritrea</li>
+                        <li><span>2016 - 2017</span><br>Lead Java Developer at Brothers Computer Center, Asmara, Eritrea</li>
+                        <li><span>2017 - 2019</span><br>Java Developer at Brothers Computer Center, Asmara, Eritrea</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2025</span><br>MBA from Mahirishi International University, Fairfeild, IA, USA</li>
+                        <li><span>2001-2006</span><br>BSC from Uiversity of Asmara, Asmara, Eritrea</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Application Development</h2>
+                <h3>Backend Development</h3>
+                <p>Responsible for creating the server-side logic of web applications and services. 
+                   Design and build the backend components that handle data storage, business logic, and communication with the front end.</p>
+                <h3><span><br></span>Desktop Application Development</h3>
+                <p>Develop cross-platform desktop applications. 
+                   Create applications with graphical user interfaces (GUIs) using libraries like JavaFX or Swing.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Web Development</h2>
+                <h3>Web Application Development</h3>
+                <p>Work on the server-side of web applications using frameworks like Spring, Java EE, and others. 
+                   Manage user authentication, data processing, and server-side routing.</p>
+                <h3><span><br></span>RESTful API Development</h3>
+                <p>Design and build RESTful APIs to facilitate communication between different parts of a web application or to provide services to external applications.</p>
+                <h3><span><br></span>Full-Stack Developmentt</h3>
+                <p> Can work on both the backend and frontend of web applications. 
+                    Using technologies like Java for the backend and JavaScript, HTML, and CSS for the frontend.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Enterprise Software and Systems</h2>
+                <h3>Enterprise Application Development</h3>
+                <p>Create enterprise-level software, including Customer Relationship Management (CRM) systems, Enterprise Resource Planning (ERP) systems, and more. 
+                   Build and maintain these complex applications.</p>
+                <h3><span><br></span>Database Integration</h3>
+                <p>Work on integrating Java applications with various databases like MySQL, and PostgreSQL. Write code to handle data retrieval, storage, and manipulation.</p>
+                <h3><span><br></span>Legacy System Maintenance</h3>
+                <p>Responsible for maintaining and updating legacy systems, ensuring they remain secure and functional.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Library.png">
+                <div class="layer">
+                    <h3>Library System</h3>
+                    <p>Application built to help librarian to register new members, checkout, and check in books for members, 
+                       system prevent members to borrow new books if are not returned on due date.
+                       Utilized spring MVC, Thymeleaf, HTML, CSS, JavaScript, Postgres database, Unit testing and Postman. </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Kabbee+.png">
+                <div class="layer">
+                    <h3>Streaming App</h3>
+                    <p>The application helps to watch East-African movies. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>tinsaeberhane.yohannes@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>641-233-2415</p>
+                <p><i class="fa-light fa-browser"></i>https://www.tnsaeyohannes.com</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/tinsaeberhane-yohannes"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <!--Form--> 
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="MessageBody" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+   
+    <div class="copyright">
+        <p>Copyright © 2023 Tinsaeberhane. ALL RIGHTS RESERVED. <i class="fa-regular fa-laptop-code"></i></a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+
+<script>
+     form = document.forms['submit-to-google-sheet'];
+     msg = document.getElementById("msg");
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch('https://x1zld4yczj.execute-api.us-east-1.amazonaws.com/v1/contact', {
+                method: 'POST',
+                body: JSON.stringify(Object.fromEntries(formData)),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            if (response.ok) {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function () {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            } else {
+                msg.innerHTML = "Error sending message. Please try again.";
+            }
+        } catch (error) {
+            console.error('Error!', error.message);
+            msg.innerHTML = "An error occurred. Please try again later.";
+        }
+    });
+</script>
+
+</body>
+</html>
